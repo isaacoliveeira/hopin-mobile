@@ -5,20 +5,13 @@ export default function Profile() {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/images/avatar.png')} // substitua pela imagem desejada
+        source={require('../../assets/images/andre.jpg')}
         style={styles.avatar}
       />
-      <Text style={styles.name}>Isaac Oliveira</Text>
-      <Text style={styles.email}>isaac@email.com</Text>
-
-      <View style={styles.infoContainer}>
-        <Text style={styles.infoLabel}>Curso:</Text>
-        <Text style={styles.infoText}>Análise e Desenvolvimento de Sistemas</Text>
-
-        <Text style={styles.infoLabel}>Instituição:</Text>
-        <Text style={styles.infoText}>IFPB - Campus Campina Grande</Text>
-      </View>
-
+      <Text style={styles.name}>Andre Atanasio</Text>
+      <Text style={styles.email}>AndreAtanasio@email.com</Text>
+      
+      
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Editar Perfil</Text>
       </TouchableOpacity>
@@ -69,7 +62,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 8,
   },
-  buttonText: {
+  buttonText: { 
     color: '#fff',
     fontWeight: '600',
   },
